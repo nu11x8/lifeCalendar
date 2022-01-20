@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css">
+    td.cell {
+        width: 5px;
+        height: 5px;
+        text-align: center;
+    }
+
+    p {
+      font-size : 30px;
+      margin : 10px 0px;
+    }
+
+</style>
+  <!-- <link rel="stylesheet" type="text/css" href="stylesheet.css"> -->
+  <script src="script.js">    </script>   
+  <title>Life Calendar</title>
+</head>
+<body onload="init()">
+  <h1 id="title">Life Calendar</h1>
+  現在の年齢
+  <input type="number" id="current_age">
+  <input type="button" onclick="start();" value="スタート">
+  <input class="stop"
+       type="button"
+       onclick="stop();"
+       value="一時停止"
+       >
+  <p><span id="age"></span></p>
+  <table id="main"></table>
+  
+</body>
+</html>
